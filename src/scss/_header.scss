@@ -1,0 +1,127 @@
+.header {
+	position: relative;
+	/* display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between; */
+	padding: 28px 24px;
+	background-color: var(--pure-white);
+}
+
+.header__nav a {
+	margin: 8px 0;
+	display: block;
+	color: var(--pure-black);
+}
+
+.header__nav a:hover {
+	color: hsla(0, 0%, 0%, 30%);
+}
+
+.header .button:hover {
+	color: var(--pure-white);
+	background-color: var(--light-grey)
+}
+
+input[type="checkbox"] {
+	display: none;
+	opacity: 0;
+}
+
+.header .button {
+	display: block;
+	padding: 14px 0;
+	font-weight: 700;
+	text-align: center;
+	color: var(--pure-white);
+	background-color: var(--pure-black);
+}
+
+
+
+@media only screen and (max-width: 714px) {
+	.header nav {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid hsla(0, 0%, 0%, 25%);
+	}
+
+	.header nav a {
+		font-size: 15px;
+	}
+
+	.header nav a:not(:first-child) {
+		margin-top: 20px;
+	}
+	
+	.header nav a:is(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.header__menu {
+		display: none;
+		position: absolute;
+		padding: 33px;
+		padding-top: 0;
+		z-index: 1;
+		top: 100%;
+		left: 0;
+		right: 0;
+		flex: 1 1 100%;
+		background-color: var(--pure-white);
+	}
+	
+	header label {
+		width: 20px;
+		height: 6px;
+		border: 0;
+		background: url(./shared/mobile/menu.svg) center no-repeat;
+	}
+	
+	input[type="checkbox"]:checked ~ label {
+		width: 16px;
+		height: 15px;
+		background: url(./shared/mobile/close.svg) center no-repeat;
+	}
+	
+	input[type="checkbox"]:checked ~ .header__menu {
+		display: block;
+	}
+	
+	input[type="checkbox"]:checked ~ .header__menu::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100vh;
+		background-color: rgba(0,0,0,.5);
+	}
+}
+
+@media only screen and (min-width:715px) {
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.header__nav a {
+		display: inline-block;
+		margin: 0 15px;
+	}
+
+	.header__menu {
+		display: flex;
+		align-items: center;
+	}
+
+	.header .button {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
