@@ -1,0 +1,61 @@
+.header {
+  & {
+    position: relative;
+    padding: 28px 24px;
+    background-color: var(--pure-white);
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 714px) {
+  /* header label {
+    width: 20px;
+    height: 6px;
+    border: 0;
+    background: url(./shared/mobile/menu.svg) center no-repeat;
+  }
+
+  input[type="checkbox"]:checked ~ label {
+    width: 16px;
+    height: 15px;
+    background: url(./shared/mobile/close.svg) center no-repeat;
+  }
+
+  input[type="checkbox"]:checked ~ .header__menu {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .header__menu::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  } */
+}
+
+@media only screen and (min-width: 715px) {
+  .header {
+    padding: 1em;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__nav {
+      a {
+        display: inline-block;
+        margin: 0 15px;
+      }
+    }
+  }
+}

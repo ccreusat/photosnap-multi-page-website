@@ -1,8 +1,8 @@
 @use "_reset";
-@use "_header";
+@use "./layout/layout";
+@use "./components/components";
+
 @use "_block";
+@use "_hero";
 @use "_story";
 @use "_features";
-
-
-@use "_footer";

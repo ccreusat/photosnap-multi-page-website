@@ -1,0 +1,27 @@
+.link {
+  span {
+    text-transform: uppercase;
+  }
+
+  &.black {
+    color: var(--pure-black);
+  }
+
+  &.white {
+    color: var(--pure-white);
+  }
+
+  &.white + svg g {
+    stroke: var(--pure-white);
+  }
+
+  & + svg {
+    margin-left: 18px;
+  }
+
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+}

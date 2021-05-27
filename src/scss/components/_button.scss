@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding: 14px 0;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--pure-white);
+  background-color: var(--pure-black);
+  transition: background 1s cubic-bezier(0.165, 0.84, 0.44, 1),
+    color 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:hover {
+    color: var(--pure-white);
+    background-color: var(--light-grey);
+  }
+}
+
+@media only screen and (min-width: 715px) {
+  .button {
+    display: inline-block;
+    padding: 0.7em 2em;
+  }
+}
