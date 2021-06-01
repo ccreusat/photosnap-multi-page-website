@@ -1,9 +1,11 @@
+@import "../scss/mixins/pxToRem";
+
 .pricing {
 
 	&-tables {
 		margin: 30px;
 
-		@media only screen and (min-width: 1070px) {
+		@media only screen and (min-width: 66em) {
 			& {
 				margin-left: auto;
 				margin-right: auto;
@@ -26,7 +28,7 @@
 			display: flex;
     		align-items: center;
 			justify-content: center;
-			font-size: 18px;
+			@include pxToRem("font-size", 18);
 		}
 
 		.checkbox {
@@ -90,19 +92,19 @@
 			}
 		}
 
-		@media only screen and (max-width: 715px) {
+		@media only screen and (max-width: 44.68em) {
 			.button {
 				margin-top: 40px;
 			}
 		}
 
-		@media only screen and (max-width: 1070px) {
+		@media only screen and (max-width: 66em) {
 			&:not(:first-child) {
 				margin-top: 24px;
 			}
 		}
 
-		@media only screen and (min-width: 715px) and (max-width:1070px) {
+		@media only screen and (min-width: 44.68em) and (max-width:66em) {
 			& {
 				padding: 40px;
 				display: grid;
@@ -127,13 +129,13 @@
 
 		}
 
-		@media only screen and (min-width: 715px) {
+		@media only screen and (min-width: 44.68em) {
 			&__text {
 				margin: 18px 0 32px;
 			}
 		}
 
-		@media only screen and (min-width: 1070px) {
+		@media only screen and (min-width: 66em) {
 
 			& {
 				text-align: center;

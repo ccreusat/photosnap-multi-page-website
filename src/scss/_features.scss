@@ -2,21 +2,17 @@
   margin: 3em;
   text-align: center;
 
-  /* svg + h3 {
-    margin-top: 48px;
-  } */
-
-  h3 + p {
-    margin-top: 16px;
+  h3 {
+    & + p {
+      margin-top: 16px;
+    }
   }
 
   &__item {
     margin: 25px 0;
   }
-}
 
-@media only screen and (min-width: 715px) and (max-width: 1070px) {
-  .features {
+  @media only screen and (min-width: 715px) and (max-width: 66em) {
     &--grid {
       .container {
         display: grid;
@@ -24,11 +20,11 @@
       }
     }
   }
-}
 
-@media only screen and (min-width: 1070px) {
-  .features {
-    margin: 50px 0;
+  @media only screen and (min-width: 66em) {
+    & {
+      margin: 50px 0;
+    }
 
     .container {
       max-width: 1110px;

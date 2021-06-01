@@ -6,11 +6,11 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@media only screen and (min-width: 715px) {
+		@media only screen and (min-width: 44.68em) {
 			background-image: url(../../assets/shared/tablet/bg-beta.jpg);
 		}
 
-		@media only screen and (min-width: 1070px) {
+		@media only screen and (min-width: 66em) {
 			background-image: url(../../assets/shared/desktop/bg-beta.jpg);
 		}
 
@@ -32,7 +32,7 @@
 		color: var(--pure-white);
 	}
 
-	@media only screen and (min-width: 715px) {
+	@media only screen and (min-width: 44.68em) {
 		&__content {
 			padding: 68px 3.6em;
 			position: relative;
@@ -52,142 +52,9 @@
 		}
 	}
 
-	@media only screen and (min-width: 1070px) {
+	@media only screen and (min-width: 66em) {
 		&__content {
 			padding: 6em 8em;
 		}
 	}
 }
-
-/* @media only screen and (min-width: 715px) {
-	.block {
-		display: flex;
-		justify-content: space-between;
-
-		.content {
-			padding: 68px 3.6em;
-			width: 64.44%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		.body {
-			.text+a {
-				display: block;
-				margin-top: 40px;
-			}
-		}
-
-		picture {
-			width: 35.54%;
-		}
-
-		&:nth-child(odd) {
-			picture {
-				order: 2;
-			}
-		}
-
-		p {
-			margin: 21px 0 0;
-		}
-
-		&.top {
-			position: relative;
-			max-height: 650px;
-
-			picture {
-				width: 100%;
-			}
-
-			img {
-				max-width: 100%;
-			}
-
-			.content {
-				position: absolute;
-				left: 5em;
-				padding: 0;
-				width: 400px;
-				height: 100%;
-				background-color: transparent;
-			}
-		}
-
-		&.highlight {
-			.body {
-				position: relative;
-
-				&::before {
-					top: 0;
-					left: -3.6em;
-					width: 6px;
-					height: 100%;
-				}
-			}
-		}
-
-		&.beta {
-			.content {
-				position: relative;
-				background-image: url(../../assets/shared/tablet/bg-beta.jpg);
-			}
-
-			.body {
-				position: static;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-
-				.heading {
-					max-width: 350px;
-				}
-
-				&::before {
-					left: 0;
-				}
-			}
-		}
-	}
-} */
-
-/* @media only screen and (min-width: 1070px) {
-	.block {
-
-		picture {
-			width: 57.63%;
-		}
-
-		.content {
-			padding: 6em 8em;
-			width: 42.36%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		&.highlight {
-			.body {
-
-				&::before {
-					left: -8em;
-				}
-			}
-		}
-
-
-		&.beta {
-			.content {
-				background-image: url(../../assets/shared/desktop/bg-beta.jpg);
-			}
-
-			.body {
-
-				&::before {
-					left: 0;
-				}
-			}
-		}
-	}
-} */

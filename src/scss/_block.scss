@@ -1,3 +1,5 @@
+@import "../scss/mixins/pxToRem";
+
 @mixin whiteText() {
   .block__heading {
     color: var(--pure-white);
@@ -63,13 +65,13 @@
     }
 
     .block__headline {
-      font-size: 12px;
+      @include pxToRem("font-size", 12);
       color: var(--pure-white);
       text-transform: uppercase;
     }
 
     .block__credit {
-      font-size: 13px;
+      @include pxToRem("font-size", 13);
       color: hsla(0, 0%, 100%, 75%);
 
       span {
@@ -79,10 +81,10 @@
   }
 }
 
-@media only screen and (min-width: 715px) {
+@media only screen and (min-width: 44.68em) {
   .block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 
     &__content {
       padding: 68px 3.6em;
@@ -139,7 +141,7 @@
   }
 }
 
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 66em) {
   .block {
 
     &:not(.block--top) {

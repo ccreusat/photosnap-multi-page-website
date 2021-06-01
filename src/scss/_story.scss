@@ -1,3 +1,5 @@
+@import "../scss/mixins/pxToRem";
+
 .story {
   position: relative;
   display: block;
@@ -8,7 +10,7 @@
   }
 
   &__author {
-    font-size: 13px;
+    @include pxToRem("font-size", 13);
     color: var(--pure-white);
   }
 
@@ -35,7 +37,7 @@
     border-top: 1px solid hsla(0, 0%, 100%, 25%);
   }
 
-  @media only screen and (min-width: 1070px) {
+  @media only screen and (min-width: 66em) {
     & {
       transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
       transform: translateY(0);

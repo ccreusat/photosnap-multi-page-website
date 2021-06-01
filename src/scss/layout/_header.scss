@@ -10,8 +10,7 @@
     opacity: 0;
   }
 
-  @media only screen and (max-width: 714px) {
-
+  @media only screen and (max-width: 44.68em) {
     label {
       position: absolute;
       top: 20px;
@@ -69,7 +68,7 @@
     }
   }
 
-  @media only screen and (min-width: 715px) {
+  @media only screen and (min-width: 44.68em) {
     & {
       padding: 1em;
       display: flex;

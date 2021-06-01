@@ -1,3 +1,5 @@
+@import "../scss/mixins/pxToRem";
+
 *,
 *::before,
 *::after {
@@ -24,28 +26,33 @@
   --light-grey: #dfdfdf;
 }
 
+$font-base: 15px;
+
+html {
+  font-size: $font-base;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 15px;
   line-height: 25px;
 }
 
 h1,
 h2 {
-  font-size: 40px;
+  @include pxToRem("font-size", 40);
   line-height: 48px;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 18px;
+  @include pxToRem("font-size", 18);
 }
 
 @media only screen and (max-width: 767px) {
   h1,
   h2 {
-    font-size: 32px;
+    @include pxToRem("font-size", 32);
     line-height: 40px;
   }
 }
@@ -62,10 +69,10 @@ svg {
 a {
   color: inherit;
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
   text-decoration: none;
+  @include pxToRem("font-size", 12);
 
   &:hover {
     text-decoration: none;
@@ -78,10 +85,3 @@ a {
   height: 100%;
   object-fit: cover;
 }
-
-/* @media only screen and (min-width: 1070px) {
-  .container {
-    width: 1110px;
-    margin: 0 auto;
-  }
-} */

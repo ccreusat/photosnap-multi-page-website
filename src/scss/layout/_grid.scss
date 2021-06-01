@@ -1,4 +1,4 @@
-@media only screen and (min-width: 715px) {
+@media only screen and (min-width: 44.68em) {
 	.grid-2 {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -6,7 +6,7 @@
 	}
 }
 
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 66em) {
 	.grid-2 {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
