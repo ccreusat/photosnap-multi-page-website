@@ -123,7 +123,7 @@ a:hover {
     transform: rotate(45deg);
   }
   .header input[type=checkbox]:checked ~ label::after {
-    margin-top: 0;
+    margin-top: -1px;
     transform: rotate(-45deg);
   }
   .header input[type=checkbox]:checked ~ .container {
