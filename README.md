@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://ccreusat-photosnap.vercel.app/screenshot.png)
+![](https://ccreusat-photosnap.vercel.app/assets/screenshot.png)
 
 ### Links
 
