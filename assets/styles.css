@@ -784,15 +784,25 @@ input[type=checkbox]:checked ~ span:is(.yearly) {
   .story::after {
     content: "";
     opacity: 0;
-    display: block;
+    position: absolute;
     width: 100%;
-    height: 0;
+    height: 6px;
     transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
     background: linear-gradient(26.57deg, #ffc593 0%, #bc7198 43.29%, #5a77ff 83.33%);
   }
   .story:hover::after {
     opacity: 1;
-    height: 6px;
+  }
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      .story::after {
+        height: 0;
+      }
+      .story:hover::after {
+        opacity: 1;
+        height: 6px;
+      }
+    }
   }
 }
 
