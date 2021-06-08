@@ -658,6 +658,9 @@ input[type=checkbox]:checked ~ span:is(.yearly) {
   margin: 3em;
   text-align: center;
 }
+.features h3 {
+  margin-top: 2em;
+}
 .features h3 + p {
   margin-top: 16px;
 }
