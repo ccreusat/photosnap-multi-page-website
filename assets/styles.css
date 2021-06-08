@@ -260,6 +260,9 @@ a:hover {
 .footer__social a {
   display: inline-block;
 }
+.footer__social a span {
+  display: none;
+}
 .footer__social a:not(:hover) svg path {
   fill: #fff;
 }

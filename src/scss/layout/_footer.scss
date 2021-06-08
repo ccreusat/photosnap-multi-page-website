@@ -18,6 +18,10 @@
 		a {
 			display: inline-block;
 
+			span {
+				display: none;
+			}
+
 			&:not(:hover) svg path {
 				fill: #fff;
 			}
