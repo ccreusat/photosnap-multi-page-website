@@ -82,6 +82,9 @@ a:hover {
   padding: 28px 24px;
   background-color: var(--pure-white);
 }
+.header__logo span {
+  display: none;
+}
 .header input[type=checkbox] {
   display: none;
   opacity: 0;
@@ -244,6 +247,9 @@ a:hover {
   padding: 56px 33px;
   text-align: center;
   background-color: var(--pure-black);
+}
+.footer__logo span {
+  display: none;
 }
 .footer__social {
   max-width: 154px;
